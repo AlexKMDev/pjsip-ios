@@ -1,0 +1,13 @@
+# Package Information for pkg-config
+
+prefix=/Users/anakros/projects/pjsip-ios/build/result
+exec_prefix=${prefix}
+libdir=/Users/anakros/projects/pjsip-ios/build/result/lib
+includedir=/Users/anakros/projects/pjsip-ios/build/result/include
+
+Name: libpjproject
+Description: Multimedia communication library
+URL: http://www.pjsip.org
+Version: 2.5
+Libs: -L${libdir} -lpjsua2-x86_64-apple-darwin_ios -lstdc++ -lpjsua-x86_64-apple-darwin_ios -lpjsip-ua-x86_64-apple-darwin_ios -lpjsip-simple-x86_64-apple-darwin_ios -lpjsip-x86_64-apple-darwin_ios -lpjmedia-codec-x86_64-apple-darwin_ios -lpjmedia-x86_64-apple-darwin_ios -lpjmedia-videodev-x86_64-apple-darwin_ios -lpjmedia-audiodev-x86_64-apple-darwin_ios -lpjmedia-x86_64-apple-darwin_ios -lpjnath-x86_64-apple-darwin_ios -lpjlib-util-x86_64-apple-darwin_ios  -lsrtp-x86_64-apple-darwin_ios -lresample-x86_64-apple-darwin_ios -lgsmcodec-x86_64-apple-darwin_ios -lspeex-x86_64-apple-darwin_ios -lilbccodec-x86_64-apple-darwin_ios -lg7221codec-x86_64-apple-darwin_ios  -lpj-x86_64-apple-darwin_ios -lm -lpthread  -framework CoreAudio -framework CoreFoundation -framework AudioToolbox -framework CFNetwork -framework UIKit -framework UIKit -framework OpenGLES -framework AVFoundation -framework CoreGraphics -framework QuartzCore -framework CoreVideo -framework CoreMedia
+Cflags: -I${includedir} -I/Users/anakros/projects/pjsip-ios/build/result/include -DPJ_AUTOCONF=1	-O2 -m32 -mios-simulator-version-min=7.0 -DPJ_SDK_NAME="iPhoneSimulator9.3.sdk" -arch x86_64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator9.3.sdk -DPJ_IS_BIG_ENDIAN=0 -DPJ_IS_LITTLE_ENDIAN=1
